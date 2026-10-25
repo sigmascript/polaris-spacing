@@ -12,8 +12,8 @@ The current project scripts are:
 
 | Script | Command |
 |---|---|
-| `npm run css` | `sass src/scss/main.scss dist/css/main.min.css --style compressed --load-path=node_modules --no-source-map` |
-| `npm run css-dev` | `sass src/scss/main.scss dist/css/main.css --watch --load-path=node_modules` |
+| `npm run css` | `sass src/scss/main.scss dist/css/main.min.css --style compressed --load-path=node_modules --no-source-map --silence-deprecation=import,global-builtin,if-function` |
+| `npm run css-dev` | `sass src/scss/main.scss dist/css/main.css --watch --load-path=node_modules --silence-deprecation=import,global-builtin,if-function` |
 
 ## Production and watch commands
 
