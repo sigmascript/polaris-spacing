@@ -28,12 +28,12 @@
     "url": "https://github.com/heminsatya/polaris-spacing/issues"
   },
   "devDependencies": {
-    "polaris-core": "^1.0.0",
-    "sass": "^1.56.1"
+    "polaris-core": "1.0.6",
+    "sass": "1.105.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "sass src/scss/main.scss dist/css/main.min.css --style compressed --load-path=node_modules --no-source-map",
-    "css-dev": "sass src/scss/main.scss dist/css/main.css --watch --load-path=node_modules"
+    "css": "sass src/scss/main.scss dist/css/main.min.css --style compressed --load-path=node_modules --no-source-map --silence-deprecation=import,global-builtin,if-function",
+    "css-dev": "sass src/scss/main.scss dist/css/main.css --watch --load-path=node_modules --silence-deprecation=import,global-builtin,if-function"
   }
 }
